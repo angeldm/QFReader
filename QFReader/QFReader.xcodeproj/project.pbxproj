@@ -91,7 +91,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EF6292819787733000113EC = {
+		0EDA692E198170CE0093DFBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				0EF6296B19787BF7000113EC /* AudioToolbox.framework */,
@@ -104,8 +104,16 @@
 				0EF6295A1978775D000113EC /* CoreMedia.framework */,
 				0EF6295B1978775D000113EC /* CoreVideo.framework */,
 				0EF6295719787750000113EC /* libZXingObjC-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0EF6292819787733000113EC = {
+			isa = PBXGroup;
+			children = (
 				0EF6293319787733000113EC /* QFReader */,
 				0EF6294A19787733000113EC /* QFReaderTests */,
+				0EDA692E198170CE0093DFBF /* Frameworks */,
 				0EF6293219787733000113EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -331,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -367,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
@@ -382,17 +390,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"/Applications/Xcode6-Beta4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
 					"\"$(SRCROOT)/../ZXingObjC/ZXingObjC\"/**",
 				);
 				INFOPLIST_FILE = QFReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/angeldm/Desktop/QFReader/DerivedData/QFReader/Build/Products/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos7.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -403,17 +408,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"/Applications/Xcode6-Beta4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
 					"\"$(SRCROOT)/../ZXingObjC/ZXingObjC\"/**",
 				);
 				INFOPLIST_FILE = QFReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/angeldm/Desktop/QFReader/DerivedData/QFReader/Build/Products/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos7.1;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -470,6 +472,7 @@
 				0EF6295319787733000113EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EF6295419787733000113EC /* Build configuration list for PBXNativeTarget "QFReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +481,7 @@
 				0EF6295619787733000113EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
